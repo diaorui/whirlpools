@@ -112,7 +112,7 @@ function createUninitializedTickArray(
   };
 }
 
-async function fetchTickArrayOrDefault(
+export async function fetchTickArrayOrDefault(
   rpc: Rpc<GetMultipleAccountsApi>,
   whirlpool: Account<Whirlpool>,
 ): Promise<Account<TickArrayFacade>[]> {
