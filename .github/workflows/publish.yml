@@ -34,7 +34,7 @@ jobs:
       # - name: Git Commit
       #   run: git add . && git commit -m "Publish Packages"
       - name: Publish Packages
-        run: nx build @orca-so/whirlpools
+        run: yarn nx build @orca-so/whirlpools
       #   run: yarn build
       - uses: actions/upload-artifact@v4
         with:
