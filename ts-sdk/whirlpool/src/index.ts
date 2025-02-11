@@ -6,4 +6,4 @@ export * from "./increaseLiquidity";
 export * from "./pool";
 export * from "./position";
 export * from "./swap";
-export * from "./token.ts";
+export * from "./token";
