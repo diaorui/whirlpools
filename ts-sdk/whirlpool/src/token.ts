@@ -139,14 +139,14 @@ export async function prepareTokenAccountsInstructions(
       ) {
         continue;
       }
-      const tokenAccount = tokenAccounts[i];
-      const existingBalance = tokenAccount.exists
-        ? tokenAccount.data.amount
-        : 0n;
-      assert(
-        BigInt(spec[mint.address]) <= existingBalance,
-        `Token account for ${mint.address} does not have the required balance`,
-      );
+      // const tokenAccount = tokenAccounts[i];
+      // const existingBalance = tokenAccount.exists
+      //   ? tokenAccount.data.amount
+      //   : 0n;
+      // assert(
+      //   BigInt(spec[mint.address]) <= existingBalance,
+      //   `Token account for ${mint.address} does not have the required balance`,
+      // );
     }
   }
 
