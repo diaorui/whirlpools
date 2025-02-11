@@ -158,7 +158,7 @@ export async function fetchTickArrayOrDefault(
   return tickArrays;
 }
 
-function getSwapQuote<T extends SwapParams>(
+export function getSwapQuote<T extends SwapParams>(
   params: T,
   whirlpool: Whirlpool,
   transferFeeA: TransferFee | undefined,
